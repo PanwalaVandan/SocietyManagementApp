@@ -1,0 +1,37 @@
+<form nz-form [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <nz-form-item>
+        <nz-form-label  [nzSm]="6" [nzXs]="24" nzRequired nzFor="societyName">Soc Name</nz-form-label>
+        <nz-form-control  [nzSm]="14" [nzXs]="24" nzErrorTip="The Society Name cannot be more than 100 Characters!">
+          <input nz-input formControlName="societyName" id="societyName" />
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+      <nz-form-label  [nzSm]="6" [nzXs]="24" nzRequired nzFor="societyAddress">Soc Address </nz-form-label>
+      <nz-form-control  [nzSm]="14" [nzXs]="24" nzErrorTip="The Society Address cannot be more than 500 Characters!">
+        <textarea nz-input formControlName="societyAddress" id="societyAddress" placeholder="Autosize height based on content lines" ngModel nzAutosize></textarea>
+      </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-label  [nzSm]="6" [nzXs]="24" nzRequired nzFor="societyRegistrationNumber">Soc Registration Number</nz-form-label>
+        <nz-form-control  [nzSm]="14" [nzXs]="24" nzErrorTip="The Society Name cannot be more than 50 Characters!">
+          <input nz-input formControlName="societyRegistrationNumber" id="societyRegistrationNumber" />
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-label  [nzSm]="6" [nzXs]="24" nzRequired nzFor="societyPancardNumber">Soc Pancard Number</nz-form-label>
+        <nz-form-control  [nzSm]="14" [nzXs]="24" nzErrorTip="The Society Name cannot be more than 100 Characters!">
+          <input nz-input formControlName="societyPancardNumber" id="societyPancardNumber" />
+        </nz-form-control>
+    </nz-form-item>
+
+    <nz-form-item>
+        <nz-form-label  [nzSm]="6" [nzXs]="24" nzRequired nzFor="societyEmail">Soc Email</nz-form-label>
+        <nz-form-control  [nzSm]="14" [nzXs]="24" nzErrorTip="The Society Name cannot be more than 100 Characters!">
+          <input nz-input formControlName="societyEmail" id="societyEmail" />
+        </nz-form-control>
+    </nz-form-item>
+    
+</form>
